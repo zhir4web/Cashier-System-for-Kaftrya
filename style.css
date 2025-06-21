@@ -1,0 +1,59 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .menu-item:hover .item-actions {
+            opacity: 1;
+        }
+        
+        .table-selected {
+            box-shadow: 0 0 0 3px #4f46e5;
+        }
+        
+        .receipt {
+            height: calc(100vh - 180px);
+        }
+        
+        .category-tab.active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-flex-col {
+                flex-direction: column;
+            }
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
